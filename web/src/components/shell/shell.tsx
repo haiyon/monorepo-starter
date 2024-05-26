@@ -1,46 +1,51 @@
-import React from 'react';
+import React, { memo, ReactNode } from 'react';
 
-import { Footer } from '@/components/shell/footer';
-import { Header } from '@/components/shell/header';
-import { Sidebar } from '@/components/shell/sidebar';
-import { Submenu } from '@/components/shell/submenu';
-import { Topbar } from '@/components/shell/topbar';
+import { cn } from '@/utils';
 
-interface ShellProps extends React.PropsWithChildren {
+import { ShellContext } from './shell.context';
+
+interface IProps extends React.PropsWithChildren {
   /** <Header /> component */
-  header?: React.ReactElement;
+  header?: ReactNode;
   /** <Sidebar /> component */
-  sidebar?: React.ReactElement;
+  sidebar?: ReactNode;
   /** <Topbar /> component */
-  topbar?: React.ReactElement;
+  topbar?: ReactNode;
   /** <Submenu /> component */
-  submenu?: React.ReactElement;
-  /** <Footer /> component */
-  footer?: React.ReactElement;
+  submenu?: ReactNode;
+  /** main area className */
+  className?: string;
 }
 
-export const Shell: React.FC<ShellProps> = ({
-  header,
-  sidebar,
-  topbar,
-  submenu,
-  footer,
-  children
-}) => {
-  return (
-    <div className='flex flex-col min-h-screen'>
-      {header && <Header>{header}</Header>}
-      <main className='flex-1 flex bg-white'>
-        {sidebar && <Sidebar>{sidebar}</Sidebar>}
-        <div className='flex-1 flex flex-col'>
-          {topbar && <Topbar>{topbar}</Topbar>}
-          <div className='flex-1 flex'>
-            {submenu && <Submenu>{submenu}</Submenu>}
-            {children && <div className='flex-1'>{children}</div>}
-          </div>
-          {footer && <Footer>{topbar}</Footer>}
+const defaultStyling = 'relative flex h-lvh overflow-hidden';
+
+export const Shell: React.FC<IProps> = memo(
+  ({ children, header, sidebar, topbar, submenu, className, ...rest }) => {
+    const mainClassName = cn(
+      defaultStyling,
+      {
+        // header and topbar conditions
+        'pt-14': !!header && !topbar, // show header && hide topbar
+        'pt-12': !header && !!topbar, // show topbar && hide header
+        'pt-[6.5rem]': !!header && !!topbar, // show header && show topbar
+        // sidebar and submenu conditions
+        'pl-14': !!sidebar && !submenu, // show sidebar && hide submenu
+        'pl-36': !sidebar && !!submenu, // show submenu && hide sidebar
+        'pl-[12.5rem]': !!sidebar && !!submenu // show sidebar && show submenu
+      },
+      className
+    );
+
+    return (
+      <ShellContext.Provider value={{ header, sidebar, topbar, submenu }}>
+        {header}
+        <div className={mainClassName} {...rest}>
+          {sidebar}
+          {topbar}
+          {submenu}
+          {children}
         </div>
-      </main>
-    </div>
-  );
-};
+      </ShellContext.Provider>
+    );
+  }
+);
