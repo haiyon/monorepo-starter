@@ -1,0 +1,34 @@
+{
+  "name": "tailwind",
+  "version": "0.1.0",
+  "description": "Common tailwindcss configuration",
+  "type": "module",
+  "main": "./mjs/index.mjs",
+  "types": "./types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./mjs/index.mjs",
+      "require": "./cjs/index.cjs",
+      "types": "./types/index.d.ts"
+    }
+  },
+  "files": [
+    "mjs",
+    "cjs",
+    "types"
+  ],
+  "dependencies": {
+    "@tailwindcss/typography": "catalog:",
+    "autoprefixer": "catalog:",
+    "cssnano": "catalog:",
+    "postcss": "catalog:",
+    "postcss-import": "catalog:",
+    "postcss-nesting": "catalog:",
+    "tailwindcss": "catalog:",
+    "tailwindcss-animate": "catalog:"
+  },
+  "devDependencies": {
+    "@types/postcss-import": "catalog:",
+    "typescript": "catalog:"
+  }
+}

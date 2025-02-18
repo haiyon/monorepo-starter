@@ -1,0 +1,17 @@
+{
+  "name": "types",
+  "version": "0.1.0",
+  "description": "Common TypeScript types",
+  "types": "./index.d.ts",
+  "files": [
+    "*.d.ts",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "@types/react": "catalog:"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public"
+  }
+}
