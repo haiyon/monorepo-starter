@@ -60,7 +60,7 @@ You can implement plugin mechanisms for your applications (apps/*) while also pr
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/monorepo-starter
+git clone https://github.com/haiyon/monorepo-starter.git
 
 # Install dependencies
 pnpm install
