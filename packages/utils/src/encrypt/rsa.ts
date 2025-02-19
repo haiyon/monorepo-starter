@@ -7,7 +7,7 @@ interface RsaOptions {
   keySize?: '1024' | '2048' | '4096';
 }
 
-type DigestMethod = (str: string) => Promise<string>;
+type DigestMethod = (_str: string) => Promise<string>;
 
 export class Rsa {
   private static instance: JSEncrypt | null = null;

@@ -31,13 +31,7 @@ const config: EnvironmentConfig = {
 General purpose utility types.
 
 ```typescript
-import type {
-  AsyncOrSync,
-  AsyncOrSyncReturn,
-  Overwrite,
-  PlainObject,
-  DeepPartial
-} from 'types';
+import type { AsyncOrSync, AsyncOrSyncReturn, Overwrite, PlainObject, DeepPartial } from 'types';
 
 // Async or sync function return type
 type UserFetch = () => Promise<{ id: number }>;

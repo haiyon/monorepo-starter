@@ -9,7 +9,7 @@ interface GeneratorOptions {
   alphabet?: string;
 }
 
-type NanoidGenerator = (size?: number) => string;
+type NanoidGenerator = (_size?: number) => string;
 
 /**
  * ID 生成器
