@@ -1,7 +1,6 @@
 {
   "name": "monorepo-starter",
   "private": true,
-  "type": "module",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "clean": "npx rimraf --glob '**/{node_modules,dist,.turbo,.eslintcache}'",
@@ -48,7 +47,7 @@
   },
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
-      "pnpm run lint:fix"
+      "eslint --fix"
     ]
   },
   "config": {
