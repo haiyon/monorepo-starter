@@ -17,6 +17,6 @@ Shared TypeScript configurations.
 
 ```json
 {
-  "extends": "tsconfig/react.json"
+  "extends": "@monorepo/tsconfig/react.json"
 }
 ```

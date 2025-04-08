@@ -1,66 +1,47 @@
 # Monorepo Starter
 
-A modern monorepo starter template using pnpm workspaces with Turborepo.
+A modern monorepo starter template for building multilingual applications with React, Tailwind CSS, and TypeScript.
 
-## Features
+## Key Features
 
-- 📦 [PNPM](https://pnpm.io/) for fast, disk space efficient package management
-- ⚡️ [Turborepo](https://turborepo.org/) for high-performance build system
-- 🔧 [TypeScript](https://www.typescriptlang.org/) for static type checking
-- 🎨 [Tailwind CSS](https://tailwindcss.com/) for utility-first styling
-- 🧪 [ESLint](https://eslint.org/) + [Prettier](https://prettier.io/) for code quality
-- 🪝 [Husky](https://typicode.github.io/husky/#/) + [Commitlint](https://commitlint.js.org/) for git hooks
+- 📦 PNPM workspaces for efficient package management
+- ⚡️ Vite for fast development experience
+- 🌐 Internationalization (i18n) with English and Chinese support
+- 🔧 TypeScript for type safety
+- 🎨 Tailwind CSS for styling
+- 🧩 Component-based architecture
+- 📱 Responsive design for all devices
+- 🔄 Hot module replacement during development
 
 ## Project Structure
 
 ```text
 .
 ├── apps/                 # Application packages
-│   ├── web/              # React frontend application
-│   └── server/           # NestJS backend application
+│   └── web/              # React frontend application
 ├── packages/             # Shared packages
-│   ├── tsconfig/         # Shared TypeScript configurations
-│   ├── tailwind/         # Shared Tailwind CSS configurations
+│   ├── ui/               # Shared UI components
 │   ├── types/            # Shared TypeScript types
 │   └── utils/            # Shared utility functions
 ├── plugins/              # Custom plugins and extensions
 └── docs/                 # Documentation
 ```
 
-### Apps
-
-The `apps` directory contains end-user applications:
-
-- `web`: React frontend application with Vite
-- `server`: NestJS backend application
-
-### Packages
-
-The `packages` directory contains reusable internal packages:
-
-- `tsconfig`: Shared TypeScript configurations for different types of projects
-- `tailwind`: Common Tailwind CSS configuration and design tokens
-- `types`: Shared TypeScript type definitions
-- `utils`: Common utility functions and helpers
-
-### Plugins
-
-The `plugins` directory is designed for extensibility:
-
-- Project-specific plugin systems for apps
-- Shared/common plugins that can be used across different applications
-- Plugin infrastructure and utilities
-- Plugin development tools and templates
-
-You can implement plugin mechanisms for your applications (apps/*) while also providing reusable plugins for common functionality.
-
 ## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- PNPM (v8 or later)
 
 ### Installation
 
 ```bash
 # Clone the repository
 git clone https://github.com/haiyon/monorepo-starter.git
+
+# Navigate to project directory
+cd monorepo-starter
 
 # Install dependencies
 pnpm install
@@ -69,66 +50,15 @@ pnpm install
 ### Development
 
 ```bash
-# Start all applications in development mode
+# Start development server
 pnpm dev
 
-# Start only the web application
-pnpm dev:web
-
-# Start only the server application
-pnpm dev:server
-```
-
-### Building
-
-```bash
-# Build all packages and applications
+# Build for production
 pnpm build
 
-# Build only the web application
-pnpm build:web
-
-# Build only the server application
-pnpm build:server
-```
-
-### Testing
-
-```bash
-# Run all tests
-pnpm test
-
-# Run tests with coverage
-pnpm test:coverage
-```
-
-### Linting
-
-```bash
-# Run linting
+# Lint code
 pnpm lint
-
-# Fix linting issues
-pnpm lint:fix
 ```
-
-## Adding New Applications
-
-To add a new application to the monorepo:
-
-1. Create a new directory in the `apps` folder
-2. Initialize your application
-3. Add the application to `pnpm-workspace.yaml`
-4. Add corresponding scripts to the root `package.json`
-
-## Adding New Packages
-
-To add a new shared package:
-
-1. Create a new directory in the `packages` folder
-2. Initialize your package with `package.json`
-3. Add the package to `pnpm-workspace.yaml`
-4. Reference it in other packages/apps using `workspace:*` version
 
 ## Git Workflow
 
@@ -153,6 +83,8 @@ Common types:
 - chore: Maintenance tasks
 
 ## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)

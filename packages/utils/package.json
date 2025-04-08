@@ -1,5 +1,5 @@
 {
-  "name": "utils",
+  "name": "@monorepo/utils",
   "version": "0.1.0",
   "description": "Utility functions library",
   "main": "./dist/index.js",
@@ -17,16 +17,16 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
-    "clsx": "catalog:",
-    "date-fns": "catalog:",
-    "jsencrypt": "catalog:",
-    "nanoid": "catalog:",
-    "tailwind-merge": "catalog:"
+    "clsx": "^2.1.1",
+    "date-fns": "^4.1.0",
+    "jsencrypt": "^3.3.2",
+    "nanoid": "^5.1.5",
+    "tailwind-merge": "^3.2.0"
   },
   "devDependencies": {
-    "@types/node": "catalog:",
-    "tsconfig": "workspace:*",
-    "tsup": "catalog:"
+    "@types/node": "^22.14.0",
+    "@monorepo/tsconfig": "workspace:*",
+    "tsup": "^8.4.0"
   },
   "publishConfig": {
     "access": "public"

@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 import react from '@vitejs/plugin-react-swc'
 import { loadEnv } from 'vite';
+import tailwindcss from "@tailwindcss/vite";
 
 import pkg from './package.json';
 
@@ -10,7 +11,8 @@ function pathResolve(dir: string) {
 }
 
 const setupPlugins = () => ([
-  react()
+  react(),
+  tailwindcss()
 ]);
 
 // https://vitejs.dev/config/

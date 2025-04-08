@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/base.json",
+  "extends": "@monorepo/tsconfig/base.json",
   "compilerOptions": {
     "strict": true,
     "esModuleInterop": true,

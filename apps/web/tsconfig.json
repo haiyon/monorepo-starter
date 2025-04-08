@@ -1,5 +1,5 @@
 {
-  "extends": "tsconfig/react.json",
+  "extends": "@monorepo/tsconfig/react.json",
   "compilerOptions": {
     "target": "esnext",
     "useDefineForClassFields": true,
