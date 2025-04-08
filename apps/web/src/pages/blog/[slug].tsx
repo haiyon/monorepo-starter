@@ -36,7 +36,7 @@ export default function BlogPostDetail() {
       authorRole: t('common.senior_developer'),
       readTime: 5,
       tags: ['Getting Started', 'Tutorial'],
-      image: 'https://via.placeholder.com/1200x600?text=Monorepo+Starter',
+      image: 'https://placehold.co/1200x600?text=Monorepo+Starter',
       content: `
         <h2>Introduction</h2>
         <p>A monorepo (monolithic repository) is a software development strategy where code for many projects is stored in the same repository. This approach has gained popularity among both large tech companies and smaller teams for its ability to simplify dependency management, code sharing, and coordinated changes.</p>
@@ -112,7 +112,7 @@ pnpm add my-library@workspace:*</code></pre>
       authorRole: t('common.uiux_specialist'),
       readTime: 8,
       tags: ['Components', 'UI Design', 'Advanced'],
-      image: 'https://via.placeholder.com/1200x600?text=Advanced+Components',
+      image: 'https://placehold.co/1200x600?text=Advanced+Components',
       content: `
         <h2>Introduction to Advanced Component Patterns</h2>
         <p>Building reusable and composable UI components is essential for maintaining a scalable and consistent design system. Shadcn UI provides an excellent foundation, but to truly leverage its power, we need to understand advanced component patterns.</p>
@@ -243,7 +243,7 @@ function useFormValidation(initialValues, validate) {
       readTime: 5,
       tags: ['Getting Started', 'Tutorial'],
       slug: 'getting-started-with-monorepo',
-      image: 'https://via.placeholder.com/800x450?text=Monorepo+Starter'
+      image: 'https://placehold.co/800x450?text=Monorepo+Starter'
     },
     {
       id: 2,
@@ -255,7 +255,7 @@ function useFormValidation(initialValues, validate) {
       readTime: 8,
       tags: ['Components', 'UI Design', 'Advanced'],
       slug: 'advanced-component-patterns',
-      image: 'https://via.placeholder.com/800x450?text=Advanced+Components'
+      image: 'https://placehold.co/800x450?text=Advanced+Components'
     },
     {
       id: 3,
@@ -267,7 +267,7 @@ function useFormValidation(initialValues, validate) {
       readTime: 10,
       tags: ['Performance', 'React', 'Optimization'],
       slug: 'optimizing-react-performance',
-      image: 'https://via.placeholder.com/800x450?text=React+Performance'
+      image: 'https://placehold.co/800x450?text=React+Performance'
     },
     {
       id: 4,
@@ -279,7 +279,7 @@ function useFormValidation(initialValues, validate) {
       readTime: 7,
       tags: ['i18n', 'Internationalization', 'Tutorial'],
       slug: 'implementing-i18n-monorepo',
-      image: 'https://via.placeholder.com/800x450?text=i18n+Guide'
+      image: 'https://placehold.co/800x450?text=i18n+Guide'
     },
     {
       id: 5,
@@ -291,7 +291,7 @@ function useFormValidation(initialValues, validate) {
       readTime: 12,
       tags: ['State Management', 'React', 'Advanced'],
       slug: 'state-management-strategies',
-      image: 'https://via.placeholder.com/800x450?text=State+Management'
+      image: 'https://placehold.co/800x450?text=State+Management'
     },
     {
       id: 6,
@@ -303,7 +303,7 @@ function useFormValidation(initialValues, validate) {
       readTime: 9,
       tags: ['Accessibility', 'UI Design', 'Best Practices'],
       slug: 'accessible-components',
-      image: 'https://via.placeholder.com/800x450?text=Accessibility'
+      image: 'https://placehold.co/800x450?text=Accessibility'
     }
   ];
 

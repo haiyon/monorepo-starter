@@ -34,7 +34,7 @@ export default function BlogPage() {
       readTime: 5,
       tags: ['Getting Started', 'Tutorial'],
       slug: 'getting-started-with-monorepo',
-      image: 'https://via.placeholder.com/800x450?text=Monorepo+Starter'
+      image: 'https://placehold.co/800x450?text=Monorepo+Starter'
     },
     {
       id: 2,
@@ -46,7 +46,7 @@ export default function BlogPage() {
       readTime: 8,
       tags: ['Components', 'UI Design', 'Advanced'],
       slug: 'advanced-component-patterns',
-      image: 'https://via.placeholder.com/800x450?text=Advanced+Components'
+      image: 'https://placehold.co/800x450?text=Advanced+Components'
     },
     {
       id: 3,
@@ -58,7 +58,7 @@ export default function BlogPage() {
       readTime: 10,
       tags: ['Performance', 'React', 'Optimization'],
       slug: 'optimizing-react-performance',
-      image: 'https://via.placeholder.com/800x450?text=React+Performance'
+      image: 'https://placehold.co/800x450?text=React+Performance'
     },
     {
       id: 4,
@@ -70,7 +70,7 @@ export default function BlogPage() {
       readTime: 7,
       tags: ['i18n', 'Internationalization', 'Tutorial'],
       slug: 'implementing-i18n-monorepo',
-      image: 'https://via.placeholder.com/800x450?text=i18n+Guide'
+      image: 'https://placehold.co/800x450?text=i18n+Guide'
     },
     {
       id: 5,
@@ -82,7 +82,7 @@ export default function BlogPage() {
       readTime: 12,
       tags: ['State Management', 'React', 'Advanced'],
       slug: 'state-management-strategies',
-      image: 'https://via.placeholder.com/800x450?text=State+Management'
+      image: 'https://placehold.co/800x450?text=State+Management'
     },
     {
       id: 6,
@@ -94,7 +94,7 @@ export default function BlogPage() {
       readTime: 9,
       tags: ['Accessibility', 'UI Design', 'Best Practices'],
       slug: 'accessible-components',
-      image: 'https://via.placeholder.com/800x450?text=Accessibility'
+      image: 'https://placehold.co/800x450?text=Accessibility'
     }
   ];
 
